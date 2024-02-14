@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- link file css -->
     <link rel="stylesheet" href="style.css">
+
+    <!--      email.js         -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("cyWAP6ht7PfRBxP9a");
+        })();
+     </script>
+
+
+
 </head>
 <body>
     <header>
@@ -56,9 +69,10 @@
             <div class="content">
                 <h1>About <span>Me</span></h1>
                 <h3>Front-End Developer & Ethical Hacker</h3>
-                <p>I'm a Front-End Developer living in Jaipur, Rajasthan, India. Currently I'm a BCA Final-year student, pursuing my BCA Degree at S.S Jain Subodh College of Global Excellence Jaipur, Rajasthan. I aspire to inspire others to learn to code and solve real-world problems. I create custom websites that help people go further online. Experienced with all stages of the development cycle for dynamic web projects. Having an knowledge of HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap.</p>
+                <p>I'm a Front-End Developer living in Jaipur, Rajasthan, India. Currently I'm a BCA Final-year student, 
+                    pursuing my BCA Degree at S.S Jain Subodh College of Global Excellence Jaipur, Rajasthan. I aspire to inspire others to learn to code and solve real-world problems. I create custom websites that help people go further online. Experienced with all stages of the development cycle for dynamic web projects. Having an knowledge of HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap.</p>
                      <div class="btns">
-                        <a href="#" class="btn">Download CV</a>
+                        <a href="img/Resume-Abhishek-Baghel.pdf" class="btn">Download CV</a>
                         <a href="#Contact" class="btn">Contact Me</a>
                      </div>
             </div>
@@ -70,7 +84,7 @@
     <section id="services" class="services">
         <div class="contanier">
             <div class="sec-top">
-                <h1>Our <span>Services</span></h1>
+                <h1>Skills & <span>Services</span></h1>
             </div>
 
             <div class="boxs">
@@ -78,28 +92,31 @@
                 <div class="box">
                     <i class="fa-solid fa-pen-ruler"></i>
                     <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Voluptates ad sit expedita maxime ipsa molestias quasi?</p>
+                    <p>Expert in Front-End development including technologies like HTML5, CSS3, JAVASCRIPT, GIT etc.</p>
+                    <h3>Service</h3>
+                    <p>Message for Website making</p>
 
-                         <a href="#" class="btn">Read More</a>
+                         <a href="#Contact" class="btn">Massage</a>
                 </div>
 
                 <div class="box">
                     <i class="fa-solid fa-laptop"></i>
-                    <h3>Hacking</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Voluptates ad sit expedita maxime ipsa molestias quasi?</p>
+                    <h3>Ethical Hacking</h3>
+                    <p>Trained in Brute Forcing, KeyLogging, Phishing Attack and Social Media Hacking, Android Hacking, System Hacking</p>
+                    <h3>Service</h3>
+                    <p>Massage for Hacking SocialMedia, Android, System</p>
 
-                         <a href="#" class="btn">Read More</a>
+                         <a href="#Contact" class="btn">Massage</a>
                 </div>
 
                 <div class="box">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Clean Code</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Voluptates ad sit expedita maxime ipsa molestias quasi?</p>
+                    <i class="fa-solid fa-edit"></i>
+                    <h3>Others</h3>
+                    <p>MS Office, Photo Editng, Video Editing, Designs including technologies like Adove Photoshop, Capcut & Filmora and Canva</p>
+                    <h3>Service</h3>
+                    <p>Massage For editng and Ms Office Work</p>
 
-                         <a href="#" class="btn">Read More</a>
+                         <a href="#Contact" class="btn">Massage</a>
                 </div>
             </div>
         </div>
@@ -227,12 +244,11 @@
             </div>
 
             <form action="">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="number" placeholder="Phone Number">
-                <input type="email" placeholder="Email Address">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button class="btn">Send Message</button>
+                <input type="text" id="name" placeholder="Name">
+                <input type="number" id="mobile" placeholder="Phone Number">
+                <input type="email" id="email" placeholder="Email Address">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button class="btn btn-primary" onclick="sendMail()">Send Message</button>
             </form>
         </div>
     </section>

@@ -18,7 +18,6 @@ html{
 }
 body{
     cursor: url('img/cursor.png'), auto;
-    cursor: red;
 }
 .contanier{
     width: 85%;
